@@ -5,11 +5,14 @@ find_package(Qt6 6.5 COMPONENTS Svg Gui WaylandClient)
 
 qt_standard_project_setup()
 
-add_library(LycheeWaylandDecorationPlugin)
-target_sources(LycheeWaylandDecorationPlugin PRIVATE
+add_library(LycheeWaylandDecorationPlugin
     main.cpp
+    lycheedecoration.h
+    lycheedecoration.cpp
+)
 
-    bradient.json
+target_sources(LycheeWaylandDecorationPlugin PRIVATE
+    lycheeDecoration.json
 )
 
 set_target_properties(LycheeWaylandDecorationPlugin PROPERTIES
