@@ -1,9 +1,7 @@
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 find_package(ECM REQUIRED NO_MODULE)
-find_package(Qt6 6.5 COMPONENTS Svg Gui)
-
-qt_standard_project_setup()
+find_package(Qt6 6.4 COMPONENTS Svg Gui)
 
 add_library(LycheePlatformThemePlugin
     main.cpp
